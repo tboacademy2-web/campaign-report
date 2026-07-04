@@ -1,120 +1,2019 @@
-<!doctype html><html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Washington, DC - Canada Market Campaign Report</title><style>
-:root{--primary:#176dcc;--accent:#f57924;--ink:#142033;--muted:#64748b;--canvas:#f3f6fa}
-*{box-sizing:border-box}html,body{margin:0;padding:0;background:#d8e0e8;color:var(--ink);font-family:Arial,"Helvetica Neue",sans-serif;-webkit-print-color-adjust:exact;print-color-adjust:exact}body{counter-reset:page}
-@page{size:A4 portrait;margin:0}
-.pdf-page{width:210mm;height:297mm;position:relative;overflow:hidden;break-after:page;page-break-after:always;background:#fff;padding:13mm 13mm 14mm}.pdf-page:last-child{break-after:auto;page-break-after:auto}.standard-page:after,.summary-page:after{content:"";position:absolute;left:0;bottom:0;width:100%;height:2.4mm;background:linear-gradient(90deg,var(--accent) 0 20%,var(--primary) 20% 100%)}
-.page-header{height:37mm;display:flex;justify-content:space-between;align-items:flex-start;border-bottom:1px solid #d9e2eb;margin-bottom:6mm;padding-bottom:4mm}.header-copy{max-width:145mm}.page-header h1{font-size:22pt;line-height:1.08;margin:2.2mm 0 0;font-weight:800;letter-spacing:-.45px;color:var(--primary);overflow-wrap:anywhere}.page-header h1.title-tight{font-size:18.5pt}.page-header h1.title-dense{font-size:16pt}.continued{font-size:8.5pt;color:var(--muted);font-weight:700;white-space:nowrap}.subtitle{margin:2.2mm 0 0;color:var(--muted);font-size:9.5pt;line-height:1.35}.eyebrow{font-size:8pt;letter-spacing:1.25px;font-weight:900;color:var(--accent);text-transform:uppercase}.eyebrow.light{color:#ffe0ca}.brand-logo{width:31mm;height:10mm;object-fit:contain;object-position:right top}.page-footer{position:absolute;left:13mm;right:13mm;bottom:5mm;display:flex;justify-content:space-between;font-size:7.2pt;color:#778399;letter-spacing:.25px}.cover-page .page-footer,.section-page .page-footer{color:rgba(255,255,255,.78)}
-.cover-page{padding:0;background:#071a2c}.cover-image{position:absolute;inset:0;width:100%;height:100%}.cover-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(4,19,34,.22),rgba(4,19,34,.3) 35%,rgba(4,19,34,.93) 100%)}.cover-top{position:absolute;right:14mm;top:13mm;background:rgba(255,255,255,.94);border-radius:3mm;padding:3mm 4mm}.cover-top img{width:33mm;height:9mm;object-fit:contain}.cover-content{position:absolute;left:16mm;right:16mm;bottom:24mm;color:#fff}.cover-content h1{font-size:39pt;line-height:1.02;margin:4mm 0 4mm;letter-spacing:-1.3px;max-width:165mm;overflow-wrap:anywhere}.cover-content h1.title-tight{font-size:31pt}.cover-content h1.title-dense{font-size:26pt}.cover-content>p{font-size:14pt;line-height:1.42;margin:0 0 11mm;color:#e5edf4;max-width:158mm}.cover-meta{display:flex;gap:10mm;font-size:8.5pt;font-weight:800;text-transform:uppercase;letter-spacing:.8px}
-.orange-rule{width:24mm;height:2.2mm;background:var(--accent);margin:1mm 0 5mm}.intro-body{margin-bottom:6mm}.large-body{font-size:13.5pt;line-height:1.5;margin:0;color:#304055}.metric-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4mm}.metric-grid.compact{grid-template-columns:repeat(2,minmax(0,1fr));gap:3.5mm;margin-bottom:5mm}.metric-card{background:linear-gradient(145deg,#fff,#f7f9fb);border:1px solid #dbe4ec;border-radius:3mm;padding:4.5mm;min-height:31mm;box-shadow:0 1.8mm 6mm rgba(9,40,64,.055)}.metric-grid.compact .metric-card{min-height:25mm;padding:3.8mm}.metric-value{font-size:21pt;font-weight:900;line-height:1;color:var(--primary);letter-spacing:-.5px;overflow-wrap:anywhere}.metric-grid.compact .metric-value{font-size:18pt}.metric-label{font-size:8.1pt;font-weight:900;margin-top:2.6mm;color:#344054;text-transform:uppercase;letter-spacing:.45px}.metric-note{font-size:7.7pt;color:var(--muted);margin-top:1.2mm;line-height:1.3}.insight-box{background:#fff7ed;border-left:2mm solid var(--accent);padding:4.5mm 5mm;border-radius:0 3mm 3mm 0;margin-top:5mm}.insight-label{font-size:8pt;text-transform:uppercase;letter-spacing:.9px;font-weight:900;color:var(--accent);margin-bottom:2mm}.insight-box ul{margin:0;padding-left:5mm}.insight-box li{font-size:8.8pt;line-height:1.42;margin:1.3mm 0;color:#344054}
-.section-page{background:var(--primary);color:#fff;padding:24mm 20mm}.section-number{font-size:8.5pt;letter-spacing:1.8px;font-weight:900;color:#ffd4b8}.section-line{width:28mm;height:2mm;background:var(--accent);margin:8mm 0 25mm}.section-page h1{font-size:43pt;line-height:1.02;margin:0;max-width:170mm;letter-spacing:-1.2px;overflow-wrap:anywhere}.section-page h1.title-tight{font-size:35pt}.section-page h1.title-dense{font-size:29pt}.section-page p{font-size:15pt;color:#dbe8f4;margin-top:8mm;max-width:150mm;line-height:1.4}.section-brand{position:absolute;right:17mm;bottom:18mm;background:#fff;border-radius:3mm;padding:4mm 5mm}.section-brand img{width:35mm;height:10mm;object-fit:contain}
-.kpi-stack{display:grid;grid-template-rows:94mm auto;gap:4mm}.image-frame{margin:0;border:1px solid #d8e2ea;border-radius:3mm;background:#f8fafc;padding:2.5mm;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center}.image-frame img{width:100%;height:100%;min-height:0}.image-frame figcaption{width:100%;font-size:7.2pt;color:var(--muted);padding-top:2mm;line-height:1.25}.image-empty{border:1px dashed #b8c5d0;border-radius:3mm;min-height:52mm;display:grid;place-items:center;color:#7b8795;font-size:9pt;background:#f8fafc}.kpi-image{height:94mm}
-.table-image{height:52mm;margin-bottom:4mm}.table-image .image-frame{height:100%}.table-wrap{border:1px solid #d8e1e8;border-radius:3mm;overflow:hidden;box-shadow:0 1.8mm 6mm rgba(9,40,64,.05)}table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:8.8pt}th{background:var(--primary);color:#fff;text-align:left;padding:3.5mm 3mm;font-size:7.6pt;text-transform:uppercase;letter-spacing:.5px;overflow-wrap:anywhere}td{padding:3.2mm 3mm;border-bottom:1px solid #e5eaee;color:#344054;vertical-align:top;line-height:1.35;overflow-wrap:anywhere}tbody tr:nth-child(even){background:#f8fafb}tbody tr:last-child td{border-bottom:none}.first-cell{font-weight:800;color:var(--primary)}.table-tight table{font-size:8pt}.table-tight th{font-size:7pt;padding:3mm 2.6mm}.table-tight td{padding:2.8mm 2.6mm}.table-dense table{font-size:7.2pt}.table-dense th{font-size:6.6pt;padding:2.7mm 2.2mm}.table-dense td{padding:2.5mm 2.2mm;line-height:1.28}
-.gallery-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:69mm;gap:4mm;margin-bottom:5mm}.gallery-grid.images-1{grid-template-columns:1fr;grid-auto-rows:116mm}.gallery-grid.images-2{grid-template-columns:repeat(2,1fr);grid-auto-rows:94mm}.gallery-grid.images-3 .gallery-item:first-child{grid-row:span 2}.gallery-item{height:100%}.weekly-layout{display:grid;grid-template-columns:.85fr 1.15fr;gap:5mm}.timeline{display:flex;flex-direction:column;gap:3mm}.timeline-step{display:grid;grid-template-columns:12mm 1fr;gap:3mm;padding:3.2mm;border:1px solid #dce4ea;border-radius:3mm;background:#fafcfd}.timeline-index{font-size:14pt;font-weight:900;color:var(--accent)}.timeline-step h3{margin:0 0 .8mm;font-size:8.8pt;color:var(--primary)}.timeline-step strong{font-size:10.5pt}.timeline-step p{margin:.8mm 0 0;font-size:7.5pt;color:var(--muted);line-height:1.3}.weekly-proof{display:grid;grid-template-rows:92mm auto;gap:4mm}.weekly-proof>.image-frame{height:92mm}
-.proposal-page{padding:8mm 7mm 13mm;background:#fff}.proposal-hero{height:34mm;background:var(--primary);color:#fff;border-radius:4mm 4mm 0 0;padding:5mm 6mm;display:flex;justify-content:space-between;gap:6mm}.proposal-hero>div:first-child{max-width:135mm}.proposal-hero img{width:27mm;height:8mm;object-fit:contain;object-position:left;margin-bottom:2mm;filter:brightness(0) invert(1)}.proposal-hero h1{font-size:14.5pt;line-height:1.12;margin:0;overflow-wrap:anywhere}.proposal-hero h1.title-tight{font-size:12.5pt}.proposal-hero h1.title-dense{font-size:10.8pt}.proposal-hero p{font-size:7pt;text-transform:uppercase;letter-spacing:.8px;margin:1.5mm 0 0;color:#cfe1f6}.proposal-meta-small{font-size:6.8pt;line-height:1.55;display:flex;flex-direction:column;min-width:43mm}.proposal-metrics{height:22mm;display:grid;grid-template-columns:repeat(4,1fr);border:1px solid #d7e0e9;border-top:0}.proposal-metrics>div{padding:3.2mm;border-right:1px solid #e2e8ef;display:flex;flex-direction:column;gap:1.2mm}.proposal-metrics>div:last-child{border-right:0}.proposal-metrics b{font-size:6.5pt;text-transform:uppercase;letter-spacing:.55px}.proposal-metrics span{font-size:8pt;color:#5b6777;overflow-wrap:anywhere}.proposal-table{border:1px solid #d7e0e9;border-top:0;overflow:hidden}.proposal-table table{font-size:6.55pt}.proposal-table th{font-size:6.1pt;padding:2.6mm 2mm}.proposal-table td{padding:2.3mm 2mm;line-height:1.25}.proposal-table th:nth-child(1){width:15%}.proposal-table th:nth-child(2){width:17%}.proposal-table th:nth-child(3){width:29%}.proposal-table th:nth-child(4){width:18%}.proposal-table th:nth-child(5),.proposal-table th:nth-child(6){width:10.5%;text-align:center}.proposal-table td:nth-child(5),.proposal-table td:nth-child(6){text-align:center}.category-cell{background:#fff1e6!important;color:var(--accent)!important;font-weight:900;text-transform:uppercase;letter-spacing:.25px;vertical-align:middle!important}.touchpoint-cell{font-weight:800;color:#172033}.foc-chip{display:inline-block;padding:1mm 2mm;border-radius:4mm;background:#e8f5ef;color:#27845e;font-weight:900;font-size:5.8pt}.proposal-note{position:absolute;left:10mm;right:10mm;bottom:12mm;font-size:6.4pt;color:#788395;line-height:1.35}.proposal-page .page-footer{bottom:4mm}
-.summary-page{background:linear-gradient(180deg,#fff 0%,#f8fafc 100%)}.summary-layout{display:grid;grid-template-columns:1.15fr .85fr;gap:5mm;margin-top:6mm}.recommendation-card,.closing-card{border-radius:3.5mm;padding:6mm}.recommendation-card{background:#fff;border:1px solid #dbe3ea}.recommendation-card ol{margin:0;padding-left:5mm}.recommendation-card li{font-size:9pt;line-height:1.45;margin:2.5mm 0}.closing-card{background:var(--primary);color:#fff}.closing-mark{width:11mm;height:11mm;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center;font-size:16pt;font-weight:900}.closing-card h2{font-size:16pt;margin:5mm 0 3mm}.closing-card p{font-size:8.7pt;line-height:1.45;color:#dbe7ee}
-.overflow-warning{outline:2mm solid #d92d20!important;outline-offset:-2mm}
-@media screen{body{padding:18px}.pdf-page{margin:0 auto 18px;box-shadow:0 8px 30px rgba(14,39,60,.18)}}@media print{html,body{background:#fff!important}.pdf-page{margin:0;box-shadow:none}}
-</style></head><body style="--primary:#176DCC;--accent:#F57924;--ink:#142033;--muted:#64748B;--canvas:#F3F6FA"><section class="pdf-page cover-page" data-page="1">
-    <img class="cover-image" src="file:///mnt/data/campaign-report-builder-github-portrait/public/demo/washington-cover.png" alt="Washington Monument campaign cover" style="object-fit:cover;object-position:center center" />
-    <div class="cover-overlay"></div>
-    <div class="cover-top"><img src="file:///mnt/data/campaign-report-builder-github-portrait/public/demo/tbo-logo.png" alt="TBO Academy" /></div>
-    <div class="cover-content"><div class="eyebrow light">CLIENT CAMPAIGN REPORT</div><h1 class="">Washington, DC</h1><p>Canada market campaign performance, production and channel insights</p><div class="cover-meta"><span>01 February 2025 - 30 January 2026</span><span>Prepared by TBO Academy</span></div></div>
-    
-  <footer class="page-footer"><span>Washington, DC | 01 February 2025 - 30 January 2026</span><span>01 / 13</span></footer>
-  </section><section class="pdf-page standard-page" data-page="2">
-  <header class="page-header">
-    <div class="header-copy">
-      <div class="eyebrow">CAMPAIGN CONTEXT</div>
-      <h1 class="">Connecting Canadian travel professionals with Washington, DC</h1>
-      
-    </div>
-    <img class="brand-logo" src="file:///mnt/data/campaign-report-builder-github-portrait/public/demo/tbo-logo.png" alt="TBO Academy" />
-  </header><div class="intro-body"><div class="orange-rule"></div><p class="large-body">Washington, D.C. is a global centre of history, politics and culture. The campaign equipped travel professionals with destination knowledge, itinerary ideas, hotel options and bookable experiences. TBO Academy supported the activity through educational content, platform visibility, direct marketing and measurable engagement across the travel-agent journey.</p><div class="insight-box"><div class="insight-label">Management insight</div><ul><li>The campaign combined awareness, education and booking-oriented content instead of relying on a single communication channel.</li><li>The portrait report format keeps evidence, numbers and recommendations consistent across clients.</li></ul></div></div>
-  <div class="metric-grid ">
-    <article class="metric-card"><div class="metric-value">110+</div><div class="metric-label">Global footprint</div><div class="metric-note">Countries served by TBO</div></article><article class="metric-card"><div class="metric-value">100,000+</div><div class="metric-label">Travel buyers</div><div class="metric-note">Academy audience</div></article><article class="metric-card"><div class="metric-value">100+</div><div class="metric-label">Free courses</div><div class="metric-note">Destination and business learning</div></article><article class="metric-card"><div class="metric-value">Canada</div><div class="metric-label">Campaign market</div><div class="metric-note">Primary reporting audience</div></article>
-  </div>
-  <footer class="page-footer"><span>Washington, DC | 01 February 2025 - 30 January 2026</span><span>02 / 13</span></footer></section><section class="pdf-page standard-page" data-page="3">
-  <header class="page-header">
-    <div class="header-copy">
-      <div class="eyebrow">CAMPAIGN PRODUCTION</div>
-      <h1 class="">Monthly room-night production</h1>
-      <p class="subtitle">Canada market comparison across the reporting period</p>
-    </div>
-    <img class="brand-logo" src="file:///mnt/data/campaign-report-builder-github-portrait/public/demo/tbo-logo.png" alt="TBO Academy" />
-  </header><div class="table-wrap "><table><thead><tr><th>Month</th><th>2024</th><th>2025</th><th>Change</th></tr></thead><tbody><tr><td class="first-cell">February</td><td class="">47</td><td class="">32</td><td class="">-31.9%</td></tr><tr><td class="first-cell">March</td><td class="">83</td><td class="">68</td><td class="">-18.1%</td></tr><tr><td class="first-cell">April</td><td class="">57</td><td class="">25</td><td class="">-56.1%</td></tr><tr><td class="first-cell">May</td><td class="">61</td><td class="">56</td><td class="">-8.2%</td></tr><tr><td class="first-cell">June</td><td class="">96</td><td class="">83</td><td class="">-13.5%</td></tr><tr><td class="first-cell">July</td><td class="">90</td><td class="">73</td><td class="">-18.9%</td></tr><tr><td class="first-cell">August</td><td class="">51</td><td class="">84</td><td class="">+64.7%</td></tr><tr><td class="first-cell">September</td><td class="">115</td><td class="">65</td><td class="">-43.5%</td></tr><tr><td class="first-cell">October</td><td class="">125</td><td class="">16</td><td class="">-87.2%</td></tr><tr><td class="first-cell">November</td><td class="">113</td><td class="">63</td><td class="">-44.2%</td></tr></tbody></table></div><div class="insight-box"><div class="insight-label">Management insight</div><ul><li>August was the only month in the supplied comparison with year-on-year growth.</li><li>The production trend should be reviewed alongside campaign timing, inventory and market conditions before drawing a causal conclusion.</li></ul></div>
-  <footer class="page-footer"><span>Washington, DC | 01 February 2025 - 30 January 2026</span><span>03 / 13</span></footer></section><section class="pdf-page standard-page" data-page="4">
-  <header class="page-header">
-    <div class="header-copy">
-      <div class="eyebrow">CAMPAIGN PRODUCTION</div>
-      <h1 class="">Monthly room-night production <span class="continued">(continued 2/2)</span></h1>
-      <p class="subtitle">Canada market comparison across the reporting period</p>
-    </div>
-    <img class="brand-logo" src="file:///mnt/data/campaign-report-builder-github-portrait/public/demo/tbo-logo.png" alt="TBO Academy" />
-  </header><div class="table-wrap "><table><thead><tr><th>Month</th><th>2024</th><th>2025</th><th>Change</th></tr></thead><tbody><tr><td class="first-cell">December</td><td class="">136</td><td class="">89</td><td class="">-34.6%</td></tr><tr><td class="first-cell">January</td><td class="">143</td><td class="">114</td><td class="">-20.3%</td></tr></tbody></table></div><div class="insight-box"><div class="insight-label">Management insight</div><ul><li>August was the only month in the supplied comparison with year-on-year growth.</li><li>The production trend should be reviewed alongside campaign timing, inventory and market conditions before drawing a causal conclusion.</li></ul></div>
-  <footer class="page-footer"><span>Washington, DC | 01 February 2025 - 30 January 2026</span><span>04 / 13</span></footer></section><section class="pdf-page section-page" data-page="5"><div class="section-number">SECTION 02</div><div class="section-line"></div><h1 class="">Campaign Activities</h1><p>Traffic, engagement, content consumption and platform visibility</p><div class="section-brand"><img src="file:///mnt/data/campaign-report-builder-github-portrait/public/demo/tbo-logo.png" alt="TBO Academy" /></div>
-  <footer class="page-footer"><span>Washington, DC | 01 February 2025 - 30 January 2026</span><span>05 / 13</span></footer></section><section class="pdf-page standard-page" data-page="6">
-  <header class="page-header">
-    <div class="header-copy">
-      <div class="eyebrow">MICROSITE PERFORMANCE</div>
-      <h1 class="">The destination microsite generated measurable content engagement</h1>
-      
-    </div>
-    <img class="brand-logo" src="file:///mnt/data/campaign-report-builder-github-portrait/public/demo/tbo-logo.png" alt="TBO Academy" />
-  </header>
-  <div class="metric-grid compact">
-    <article class="metric-card"><div class="metric-value">24,994</div><div class="metric-label">Total visitors</div><div class="metric-note">Unique microsite users</div></article><article class="metric-card"><div class="metric-value">41,517</div><div class="metric-label">Page views</div><div class="metric-note">Pages consumed</div></article><article class="metric-card"><div class="metric-value">1m 53s</div><div class="metric-label">Average session</div><div class="metric-note">Time per session</div></article><article class="metric-card"><div class="metric-value">1.66</div><div class="metric-label">Pages per visitor</div><div class="metric-note">Calculated from supplied data</div></article>
-  </div><div class="kpi-stack"><figure class="image-frame kpi-image"><img src="file:///mnt/data/campaign-report-builder-github-portrait/public/demo/washington-microsite.png" alt="Washington microsite screenshots" style="object-fit:contain;object-position:center center" /></figure><div class="insight-box"><div class="insight-label">Management insight</div><ul><li>Visitors viewed more than one page on average, indicating movement beyond the initial landing page.</li><li>The session duration suggests enough time to review the destination proposition and supporting campaign modules.</li></ul></div></div>
-  <footer class="page-footer"><span>Washington, DC | 01 February 2025 - 30 January 2026</span><span>06 / 13</span></footer></section><section class="pdf-page standard-page" data-page="7">
-  <header class="page-header">
-    <div class="header-copy">
-      <div class="eyebrow">TBO ACADEMY ITINERARIES</div>
-      <h1 class="title-tight">Downloadable itineraries converted destination interest into planning tools</h1>
-      
-    </div>
-    <img class="brand-logo" src="file:///mnt/data/campaign-report-builder-github-portrait/public/demo/tbo-logo.png" alt="TBO Academy" />
-  </header><div class="table-image"><figure class="image-frame "><img src="file:///mnt/data/campaign-report-builder-github-portrait/public/demo/washington-itinerary.png" alt="TBO Academy itinerary page" style="object-fit:contain;object-position:center center" /></figure></div><div class="table-wrap table-tight"><table><thead><tr><th>Itinerary</th><th>Duration</th><th>Downloads</th></tr></thead><tbody><tr><td class="first-cell">Historical Tour of DC and Philadelphia</td><td class="">5D / 4N</td><td class="">377</td></tr><tr><td class="first-cell">Philadelphia &amp; Washington, DC</td><td class="">5D / 4N</td><td class="">390</td></tr><tr><td class="first-cell">Magic of Cherry Blossom - NYC, DC &amp; Philadelphia</td><td class="">7D / 6N</td><td class="">406</td></tr></tbody></table></div><div class="insight-box"><div class="insight-label">Management insight</div><ul><li>The cherry-blossom itinerary recorded the highest downloads among the three supplied itinerary options.</li></ul></div>
-  <footer class="page-footer"><span>Washington, DC | 01 February 2025 - 30 January 2026</span><span>07 / 13</span></footer></section><section class="pdf-page standard-page" data-page="8">
-  <header class="page-header">
-    <div class="header-copy">
-      <div class="eyebrow">CONTENT &amp; VISIBILITY</div>
-      <h1 class="">Priority placement and blog content extended campaign reach</h1>
-      
-    </div>
-    <img class="brand-logo" src="file:///mnt/data/campaign-report-builder-github-portrait/public/demo/tbo-logo.png" alt="TBO Academy" />
-  </header><div class="gallery-grid images-2"><figure class="image-frame gallery-item"><img src="file:///mnt/data/campaign-report-builder-github-portrait/public/demo/washington-homepage.png" alt="TBO Academy home page placement" style="object-fit:contain;object-position:center center" /></figure><figure class="image-frame gallery-item"><img src="file:///mnt/data/campaign-report-builder-github-portrait/public/demo/washington-blog.png" alt="Washington blog post" style="object-fit:contain;object-position:center center" /></figure></div>
-  <div class="metric-grid compact">
-    <article class="metric-card"><div class="metric-value">4,614</div><div class="metric-label">Home-page clicks</div></article><article class="metric-card"><div class="metric-value">3,793</div><div class="metric-label">Top blog views</div></article><article class="metric-card"><div class="metric-value">3,790</div><div class="metric-label">Second blog</div></article><article class="metric-card"><div class="metric-value">Multi-post</div><div class="metric-label">Content format</div></article>
-  </div><div class="insight-box"><div class="insight-label">Management insight</div><ul><li>The priority home-page placement produced the clearest direct-response result in this content group.</li><li>Blog performance stayed broadly consistent across the supplied posts, supporting repeated destination discovery.</li></ul></div>
-  <footer class="page-footer"><span>Washington, DC | 01 February 2025 - 30 January 2026</span><span>08 / 13</span></footer></section><section class="pdf-page standard-page" data-page="9">
-  <header class="page-header">
-    <div class="header-copy">
-      <div class="eyebrow">EMAIL MARKETING</div>
-      <h1 class="">Email performance remained strong across eleven mailers</h1>
-      
-    </div>
-    <img class="brand-logo" src="file:///mnt/data/campaign-report-builder-github-portrait/public/demo/tbo-logo.png" alt="TBO Academy" />
-  </header><div class="table-wrap "><table><thead><tr><th>Mailer</th><th>Database</th><th>Open rate</th><th>Click-through rate</th></tr></thead><tbody><tr><td class="first-cell">Mailer 01</td><td class="">912</td><td class="">74.30%</td><td class="">2.30%</td></tr><tr><td class="first-cell">Mailer 02</td><td class="">1,084</td><td class="">75.40%</td><td class="">2.60%</td></tr><tr><td class="first-cell">Mailer 03</td><td class="">978</td><td class="">73.50%</td><td class="">2.40%</td></tr><tr><td class="first-cell">Mailer 04</td><td class="">1,052</td><td class="">77.60%</td><td class="">2.90%</td></tr><tr><td class="first-cell">Mailer 05</td><td class="">903</td><td class="">71.80%</td><td class="">2.00%</td></tr><tr><td class="first-cell">Mailer 06</td><td class="">1,017</td><td class="">76.10%</td><td class="">2.60%</td></tr><tr><td class="first-cell">Mailer 07</td><td class="">1,096</td><td class="">77.60%</td><td class="">2.90%</td></tr><tr><td class="first-cell">Mailer 08</td><td class="">1,072</td><td class="">78.10%</td><td class="">3.00%</td></tr><tr><td class="first-cell">Mailer 09</td><td class="">934</td><td class="">71.90%</td><td class="">2.00%</td></tr><tr><td class="first-cell">Mailer 10</td><td class="">1,063</td><td class="">76.80%</td><td class="">2.70%</td></tr></tbody></table></div><div class="insight-box"><div class="insight-label">Management insight</div><ul><li>Mailer 08 recorded both the strongest open rate and the strongest click-through rate in the supplied data.</li><li>The builder automatically moves excess rows to a continuation page and repeats the table header.</li></ul></div>
-  <footer class="page-footer"><span>Washington, DC | 01 February 2025 - 30 January 2026</span><span>09 / 13</span></footer></section><section class="pdf-page standard-page" data-page="10">
-  <header class="page-header">
-    <div class="header-copy">
-      <div class="eyebrow">EMAIL MARKETING</div>
-      <h1 class="">Email performance remained strong across eleven mailers <span class="continued">(continued 2/2)</span></h1>
-      
-    </div>
-    <img class="brand-logo" src="file:///mnt/data/campaign-report-builder-github-portrait/public/demo/tbo-logo.png" alt="TBO Academy" />
-  </header><div class="table-wrap "><table><thead><tr><th>Mailer</th><th>Database</th><th>Open rate</th><th>Click-through rate</th></tr></thead><tbody><tr><td class="first-cell">Mailer 11</td><td class="">989</td><td class="">74.80%</td><td class="">2.60%</td></tr></tbody></table></div><div class="insight-box"><div class="insight-label">Management insight</div><ul><li>Mailer 08 recorded both the strongest open rate and the strongest click-through rate in the supplied data.</li><li>The builder automatically moves excess rows to a continuation page and repeats the table header.</li></ul></div>
-  <footer class="page-footer"><span>Washington, DC | 01 February 2025 - 30 January 2026</span><span>10 / 13</span></footer></section><section class="pdf-page proposal-page" data-page="11"><div class="proposal-hero"><div><img src="file:///mnt/data/campaign-report-builder-github-portrait/public/demo/tbo-logo.png" alt="TBO Academy" /><h1 class="">Fashion Arena Prague Outlet x TBO - GCC, India, Egypt &amp; Turkey Campaign</h1><p>B2B marketing campaign proposal</p></div><div class="proposal-meta-small"><span><b>Period:</b> 01 February 2025 - 30 January 2026</span><span><b>Prepared by:</b> TBO Academy</span><span><b>Date:</b> 04 July 2026</span></div></div><div class="proposal-metrics"><div><b>Target markets</b><span>GCC, India, Egypt, Turkey</span></div><div><b>Campaign period</b><span>9 months</span></div><div><b>Client investment</b><span>$14,000</span></div><div><b>Total budget</b><span>$34,000</span></div></div><div class="proposal-table"><table><thead><tr><th>Category</th><th>Touchpoint</th><th>Details</th><th>KPI / Target</th><th>Client Share</th><th>TBO Share</th></tr></thead><tbody><tr><td class="category-cell">Brand Positioning</td><td class="touchpoint-cell">Dedicated Microsite</td><td class="">Landing page showcasing outlet offers, experiences, promotions and a book-now call to action.</td><td class="">100+ visitors/day</td><td class="">$3,500</td><td class="">$4,500</td></tr><tr><td class="category-cell">Trade Training &amp; Engagement</td><td class="touchpoint-cell">Digital Workshop / Webinar</td><td class="">Interactive showcase with gamification, quiz, engagement and follow-up communication.</td><td class="">1 workshop | 100 bookers</td><td class="">$3,000</td><td class="">$3,000</td></tr><tr><td class="category-cell">Trade Training &amp; Engagement</td><td class="touchpoint-cell">Facebook Live Broadcast</td><td class="">Workshop broadcast on Facebook Live for wider organic reach.</td><td class="">1,000+ engagement</td><td class=""><span class="foc-chip">FOC</span></td><td class=""><span class="foc-chip">FOC</span></td></tr><tr><td class="category-cell">Reward Program</td><td class="touchpoint-cell">Webinar Winner Vouchers</td><td class="">Five agent vouchers or gift cards based on participation.</td><td class="">5 winners per webinar</td><td class=""><span class="foc-chip">FOC</span></td><td class=""><span class="foc-chip">FOC</span></td></tr><tr><td class="category-cell">Reward Program</td><td class="touchpoint-cell">Flash Sale &amp; Seasonal Specials</td><td class="">Limited-time offers during key seasonal periods.</td><td class="">As per bookings</td><td class=""><span class="foc-chip">FOC</span></td><td class=""><span class="foc-chip">FOC</span></td></tr><tr><td class="category-cell">Product of the Week</td><td class="touchpoint-cell">7 Days - 7 USPs Feature</td><td class="">Dedicated promotion with app notifications, WhatsApp, homepage quiz and push notifications.</td><td class="">1 feature</td><td class="">$1,000</td><td class="">$1,000</td></tr></tbody></table></div><div class="proposal-note">Prices in USD. FOC items are complimentary and subject to availability. This proposal is valid for 30 days from the date of issue.</div>
-  <footer class="page-footer"><span>Washington, DC | 01 February 2025 - 30 January 2026</span><span>11 / 13</span></footer></section><section class="pdf-page proposal-page" data-page="12"><div class="proposal-hero"><div><img src="file:///mnt/data/campaign-report-builder-github-portrait/public/demo/tbo-logo.png" alt="TBO Academy" /><h1 class="">Fashion Arena Prague Outlet x TBO - GCC, India, Egypt &amp; Turkey Campaign <span class="continued">(continued 2/2)</span></h1><p>B2B marketing campaign proposal</p></div><div class="proposal-meta-small"><span><b>Period:</b> 01 February 2025 - 30 January 2026</span><span><b>Prepared by:</b> TBO Academy</span><span><b>Date:</b> 04 July 2026</span></div></div><div class="proposal-metrics"><div><b>Target markets</b><span>GCC, India, Egypt, Turkey</span></div><div><b>Campaign period</b><span>9 months</span></div><div><b>Client investment</b><span>$14,000</span></div><div><b>Total budget</b><span>$34,000</span></div></div><div class="proposal-table"><table><thead><tr><th>Category</th><th>Touchpoint</th><th>Details</th><th>KPI / Target</th><th>Client Share</th><th>TBO Share</th></tr></thead><tbody><tr><td class="category-cell">Digital Marketing</td><td class="touchpoint-cell">Monthly Email Mailer</td><td class="">Destination promotion to the TBO agent database with segmented targeting.</td><td class="">1 mailer/month</td><td class="">$6,500</td><td class="">$6,500</td></tr><tr><td class="category-cell">Digital Marketing</td><td class="touchpoint-cell">Social Media Posts</td><td class="">Monthly posts across Facebook, Instagram and LinkedIn.</td><td class="">27 posts total</td><td class=""><span class="foc-chip">FOC</span></td><td class=""><span class="foc-chip">FOC</span></td></tr><tr><td class="category-cell">Digital Marketing</td><td class="touchpoint-cell">Video Posts</td><td class="">Reels and Facebook video posts for higher engagement.</td><td class="">4 posts</td><td class=""><span class="foc-chip">FOC</span></td><td class=""><span class="foc-chip">FOC</span></td></tr><tr><td class="category-cell">Campaign Activities</td><td class="touchpoint-cell">Monthly Reporting &amp; Analysis</td><td class="">Monthly report covering activities, KPI performance and analysis.</td><td class="">Monthly report</td><td class=""><span class="foc-chip">FOC</span></td><td class=""><span class="foc-chip">FOC</span></td></tr></tbody></table></div><div class="proposal-note">Prices in USD. FOC items are complimentary and subject to availability. This proposal is valid for 30 days from the date of issue.</div>
-  <footer class="page-footer"><span>Washington, DC | 01 February 2025 - 30 January 2026</span><span>12 / 13</span></footer></section><section class="pdf-page summary-page" data-page="13">
-  <header class="page-header">
-    <div class="header-copy">
-      <div class="eyebrow">EXECUTIVE SUMMARY</div>
-      <h1 class="">A standardised portrait report keeps every client output consistent</h1>
-      
-    </div>
-    <img class="brand-logo" src="file:///mnt/data/campaign-report-builder-github-portrait/public/demo/tbo-logo.png" alt="TBO Academy" />
-  </header>
-  <div class="metric-grid ">
-    <article class="metric-card"><div class="metric-value">24,994</div><div class="metric-label">Microsite visitors</div></article><article class="metric-card"><div class="metric-value">41,517</div><div class="metric-label">Page views</div></article><article class="metric-card"><div class="metric-value">4,614</div><div class="metric-label">Home-page clicks</div></article><article class="metric-card"><div class="metric-value">78.10%</div><div class="metric-label">Best email open</div></article>
-  </div><div class="summary-layout"><div class="recommendation-card"><div class="insight-label">Recommended next actions</div><ol><li>Keep all source content editable, but use controlled templates rather than free-positioned objects.</li><li>Use automatic continuation pages for long tables, image galleries and metric lists.</li><li>Export through the browser print engine on GitHub Pages; choose Save as PDF and disable browser headers and footers.</li></ol></div><div class="closing-card"><div class="closing-mark">✓</div><h2>Report ready for client discussion</h2><p>All text, numbers, tables, colours, logos and images in this demo can be replaced from the editor.</p></div></div>
-  <footer class="page-footer"><span>Washington, DC | 01 February 2025 - 30 January 2026</span><span>13 / 13</span></footer></section><script>window.addEventListener('load',()=>{setTimeout(()=>{const pages=[...document.querySelectorAll('.pdf-page')];const bad=[];pages.forEach((page,index)=>{if(page.scrollHeight>page.clientHeight+2||page.scrollWidth>page.clientWidth+2){page.classList.add('overflow-warning');bad.push(index+1)}});parent.postMessage({type:'report-layout-check',overflowPages:bad,pageCount:pages.length},'*')},350)});</script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>Campaign Report Builder | Login</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --primary-blue: #075bd8;
+      --dark-blue: #061f47;
+      --light-blue: #eaf2ff;
+      --orange: #ff6900;
+      --text-dark: #15233b;
+      --text-grey: #69758a;
+      --border: #d8e0eb;
+      --success: #169b55;
+      --danger: #dc3545;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: "Inter", Arial, sans-serif;
+      color: var(--text-dark);
+      background: #f5f8fc;
+    }
+
+    button,
+    input {
+      font: inherit;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .page-wrapper {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 54% 46%;
+    }
+
+    /* =====================================================
+       LEFT SIDE
+    ===================================================== */
+
+    .hero-section {
+      position: relative;
+      min-height: 100vh;
+      overflow: hidden;
+      color: white;
+
+      background:
+        linear-gradient(
+          90deg,
+          rgba(3, 28, 68, 0.97) 0%,
+          rgba(3, 44, 92, 0.82) 47%,
+          rgba(4, 72, 140, 0.22) 100%
+        ),
+        url("https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=1800&q=90")
+        center center / cover no-repeat;
+    }
+
+    .hero-section::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+
+      background:
+        radial-gradient(
+          circle at 82% 26%,
+          rgba(80, 156, 255, 0.26),
+          transparent 32%
+        ),
+        linear-gradient(
+          180deg,
+          transparent 50%,
+          rgba(3, 30, 70, 0.37) 100%
+        );
+
+      pointer-events: none;
+    }
+
+    .hero-main {
+      position: relative;
+      z-index: 2;
+      min-height: calc(100vh - 120px);
+      padding: 52px 62px 145px;
+    }
+
+    .product-name {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .product-logo-icon {
+      width: 45px;
+      height: 45px;
+      display: grid;
+      place-items: center;
+      border-radius: 10px;
+      color: white;
+
+      background: linear-gradient(
+        145deg,
+        #0a73f5,
+        #0756c9
+      );
+
+      box-shadow: 0 10px 25px rgba(0, 89, 218, 0.4);
+    }
+
+    .product-logo-icon svg {
+      width: 27px;
+      height: 27px;
+    }
+
+    .hero-content {
+      width: min(500px, 60%);
+      margin-top: 78px;
+    }
+
+    .hero-content h1 {
+      margin-bottom: 20px;
+      font-size: clamp(43px, 4.2vw, 66px);
+      line-height: 1.1;
+      letter-spacing: -2.7px;
+      font-weight: 750;
+    }
+
+    .hero-subtitle {
+      max-width: 470px;
+      margin-bottom: 40px;
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .feature-list {
+      display: grid;
+      gap: 25px;
+    }
+
+    .feature {
+      display: flex;
+      align-items: flex-start;
+      gap: 17px;
+    }
+
+    .feature-icon {
+      flex-shrink: 0;
+      width: 51px;
+      height: 51px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+
+      background: rgba(52, 133, 238, 0.24);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(8px);
+    }
+
+    .feature-icon svg {
+      width: 25px;
+      height: 25px;
+    }
+
+    .feature h3 {
+      margin: 2px 0 6px;
+      font-size: 16px;
+    }
+
+    .feature p {
+      max-width: 280px;
+      color: rgba(255, 255, 255, 0.78);
+      font-size: 14px;
+      line-height: 1.55;
+    }
+
+    /* Flight path */
+
+    .flight-path {
+      position: absolute;
+      top: -10px;
+      right: 92px;
+      width: 310px;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .plane-icon {
+      position: absolute;
+      top: 105px;
+      right: 245px;
+      z-index: 3;
+      width: 48px;
+      color: white;
+      transform: rotate(-7deg);
+
+      filter: drop-shadow(
+        0 7px 10px rgba(0, 30, 70, 0.35)
+      );
+    }
+
+    /* Metric cards */
+
+    .metric-card {
+      position: absolute;
+      z-index: 4;
+      color: #243148;
+
+      background: rgba(255, 255, 255, 0.95);
+      border: 1px solid rgba(255, 255, 255, 0.7);
+      border-radius: 13px;
+
+      box-shadow: 0 18px 45px rgba(4, 36, 78, 0.24);
+      backdrop-filter: blur(14px);
+    }
+
+    .metric-title {
+      display: block;
+      margin-bottom: 17px;
+      font-size: 10px;
+      color: #334057;
+    }
+
+    .metric-label {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 10px;
+      color: #7b8798;
+    }
+
+    .metric-card strong {
+      font-size: 23px;
+      letter-spacing: -0.6px;
+    }
+
+    .growth {
+      color: var(--success);
+      font-size: 10px;
+      font-weight: 700;
+    }
+
+    .metric-card small {
+      display: block;
+      color: #8995a5;
+      font-size: 9px;
+    }
+
+    .overview-card {
+      top: 188px;
+      right: 47px;
+      width: 210px;
+      padding: 18px;
+    }
+
+    .overview-card .growth {
+      display: block;
+      margin-top: 8px;
+    }
+
+    .line-chart {
+      width: 100%;
+      height: 48px;
+      margin-top: 7px;
+    }
+
+    .destination-card {
+      top: 404px;
+      right: 88px;
+      width: 260px;
+      padding: 18px;
+    }
+
+    .destination-container {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .donut-chart {
+      position: relative;
+      flex-shrink: 0;
+      width: 94px;
+      height: 94px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+
+      background: conic-gradient(
+        #075bd8 0 38%,
+        #438fe3 38% 59%,
+        #83bde9 59% 74%,
+        #cc8ee2 74% 86%,
+        #e1e7ef 86% 100%
+      );
+    }
+
+    .donut-chart::after {
+      content: "";
+      position: absolute;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: white;
+    }
+
+    .donut-chart span {
+      position: relative;
+      z-index: 2;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .destination-list {
+      list-style: none;
+      display: grid;
+      gap: 8px;
+      font-size: 9px;
+      color: #536075;
+    }
+
+    .destination-list li {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .legend {
+      width: 8px;
+      height: 8px;
+      border-radius: 2px;
+    }
+
+    .legend-1 {
+      background: #075bd8;
+    }
+
+    .legend-2 {
+      background: #438fe3;
+    }
+
+    .legend-3 {
+      background: #cc8ee2;
+    }
+
+    .legend-4 {
+      background: #f1a236;
+    }
+
+    .legend-5 {
+      background: #dce3ec;
+    }
+
+    .revenue-card {
+      top: 607px;
+      right: 240px;
+      width: 192px;
+      padding: 17px 18px;
+    }
+
+    .revenue-card .metric-title {
+      margin-bottom: 10px;
+    }
+
+    .revenue-top {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .revenue-top strong {
+      font-size: 21px;
+    }
+
+    .mini-bars {
+      height: 48px;
+      display: flex;
+      align-items: flex-end;
+      gap: 4px;
+      margin-top: 8px;
+    }
+
+    .mini-bars span {
+      flex: 1;
+      min-width: 6px;
+      border-radius: 1px 1px 0 0;
+
+      background: linear-gradient(
+        180deg,
+        #67a8ff,
+        #1263e9
+      );
+    }
+
+    /* Left bottom section */
+
+    .hero-footer {
+      position: absolute;
+      z-index: 5;
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+      min-height: 120px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      padding: 20px 50px;
+
+      background: rgba(3, 42, 90, 0.74);
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(12px);
+    }
+
+    .footer-feature {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 0 18px;
+    }
+
+    .footer-feature + .footer-feature {
+      border-left: 1px solid rgba(255, 255, 255, 0.14);
+    }
+
+    .footer-feature-icon {
+      flex-shrink: 0;
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+
+      background: rgba(43, 126, 232, 0.25);
+    }
+
+    .footer-feature-icon svg {
+      width: 23px;
+      height: 23px;
+    }
+
+    .footer-feature strong {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 13px;
+    }
+
+    .footer-feature p {
+      color: rgba(255, 255, 255, 0.76);
+      font-size: 11px;
+      line-height: 1.45;
+    }
+
+    /* =====================================================
+       RIGHT LOGIN SIDE
+    ===================================================== */
+
+    .login-section {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      padding: 48px;
+
+      background:
+        radial-gradient(
+          circle at 76% 8%,
+          rgba(100, 157, 235, 0.12),
+          transparent 30%
+        ),
+        #f7f9fc;
+    }
+
+    .login-card {
+      width: min(700px, 100%);
+      padding: 46px 62px 42px;
+      border: 1px solid rgba(205, 214, 226, 0.82);
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.97);
+
+      box-shadow:
+        0 25px 70px rgba(28, 48, 82, 0.16);
+    }
+
+    .tbo-logo {
+      width: max-content;
+      position: relative;
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+
+      margin: 0 auto 40px;
+      font-size: 56px;
+      font-weight: 800;
+      line-height: 0.8;
+      letter-spacing: -4px;
+    }
+
+    .tbo-blue {
+      color: #075bd8;
+    }
+
+    .tbo-orange {
+      color: var(--orange);
+    }
+
+    .tbo-tagline {
+      position: absolute;
+      right: 0;
+      bottom: -21px;
+      color: #999;
+      font-size: 9px;
+      letter-spacing: 0.7px;
+      white-space: nowrap;
+    }
+
+    .login-heading {
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .login-heading h2 {
+      margin-bottom: 8px;
+      font-size: 36px;
+      line-height: 1.2;
+      letter-spacing: -1px;
+    }
+
+    .login-heading p {
+      color: #606c80;
+      font-size: 16px;
+    }
+
+    .login-heading span {
+      color: var(--primary-blue);
+      font-weight: 500;
+    }
+
+    .field-group {
+      margin-bottom: 21px;
+    }
+
+    .field-group label {
+      display: block;
+      margin-bottom: 9px;
+      color: #27344b;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .input-container {
+      position: relative;
+    }
+
+    .input-icon {
+      position: absolute;
+      left: 17px;
+      top: 50%;
+      z-index: 2;
+
+      width: 21px;
+      height: 21px;
+      color: #69758a;
+
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
+
+    .input-icon svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .input-container input {
+      width: 100%;
+      height: 56px;
+      padding: 0 52px 0 55px;
+
+      color: var(--text-dark);
+      font-size: 15px;
+
+      background: white;
+      border: 1px solid #cfd8e5;
+      border-radius: 9px;
+      outline: none;
+
+      transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+    }
+
+    .input-container input::placeholder {
+      color: #8995a8;
+    }
+
+    .input-container input:focus {
+      border-color: var(--primary-blue);
+
+      box-shadow:
+        0 0 0 4px rgba(7, 91, 216, 0.1);
+    }
+
+    .input-container input.invalid {
+      border-color: var(--danger);
+      background: #fffafb;
+    }
+
+    .password-toggle {
+      position: absolute;
+      top: 50%;
+      right: 14px;
+
+      width: 35px;
+      height: 35px;
+      display: grid;
+      place-items: center;
+
+      padding: 0;
+      color: #69758a;
+      background: transparent;
+      border: 0;
+      border-radius: 7px;
+
+      cursor: pointer;
+      transform: translateY(-50%);
+    }
+
+    .password-toggle:hover {
+      color: var(--primary-blue);
+      background: #eef4ff;
+    }
+
+    .password-toggle svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    .eye-closed {
+      display: none;
+    }
+
+    .password-toggle.visible .eye-open {
+      display: none;
+    }
+
+    .password-toggle.visible .eye-closed {
+      display: block;
+    }
+
+    .error-message {
+      min-height: 17px;
+      display: block;
+      padding-top: 5px;
+      color: var(--danger);
+      font-size: 12px;
+    }
+
+    .form-options {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      margin: -3px 0 22px;
+      font-size: 13px;
+    }
+
+    .remember-option {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #536078;
+      cursor: pointer;
+    }
+
+    .remember-option input {
+      width: 16px;
+      height: 16px;
+      accent-color: var(--primary-blue);
+    }
+
+    .form-options a {
+      color: var(--primary-blue);
+      font-weight: 500;
+    }
+
+    .form-options a:hover {
+      text-decoration: underline;
+    }
+
+    .login-button {
+      position: relative;
+      width: 100%;
+      height: 57px;
+      display: grid;
+      place-items: center;
+
+      color: white;
+      font-weight: 600;
+
+      background: linear-gradient(
+        90deg,
+        #075bd8,
+        #0867ea
+      );
+
+      border: 0;
+      border-radius: 8px;
+
+      box-shadow:
+        0 12px 23px rgba(7, 91, 216, 0.18);
+
+      cursor: pointer;
+
+      transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+    }
+
+    .login-button:hover {
+      transform: translateY(-1px);
+
+      box-shadow:
+        0 15px 28px rgba(7, 91, 216, 0.25);
+    }
+
+    .login-button:disabled {
+      opacity: 0.8;
+      cursor: wait;
+    }
+
+    .button-loader {
+      display: none;
+      width: 21px;
+      height: 21px;
+
+      border: 2px solid rgba(255, 255, 255, 0.45);
+      border-top-color: white;
+      border-radius: 50%;
+
+      animation: spin 0.7s linear infinite;
+    }
+
+    .login-button.loading .button-text {
+      display: none;
+    }
+
+    .login-button.loading .button-loader {
+      display: block;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .form-status {
+      min-height: 18px;
+      margin-top: 10px;
+      color: var(--success);
+      font-size: 12px;
+      text-align: center;
+    }
+
+    .divider {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin: 25px 0;
+      color: #607087;
+      font-size: 13px;
+    }
+
+    .divider::before,
+    .divider::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    .divider span {
+      white-space: nowrap;
+    }
+
+    .social-buttons {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .social-button {
+      height: 54px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 11px;
+
+      color: #27344a;
+      background: white;
+      border: 1px solid #d5dce7;
+      border-radius: 8px;
+
+      cursor: pointer;
+
+      transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+    }
+
+    .social-button:hover {
+      border-color: #b4c1d2;
+      transform: translateY(-1px);
+
+      box-shadow:
+        0 8px 17px rgba(39, 61, 97, 0.09);
+    }
+
+    .google-logo {
+      font-size: 21px;
+      font-weight: 800;
+      color: #4285f4;
+    }
+
+    .microsoft-logo {
+      width: 20px;
+      height: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px;
+    }
+
+    .microsoft-logo span:nth-child(1) {
+      background: #f35325;
+    }
+
+    .microsoft-logo span:nth-child(2) {
+      background: #81bc06;
+    }
+
+    .microsoft-logo span:nth-child(3) {
+      background: #05a6f0;
+    }
+
+    .microsoft-logo span:nth-child(4) {
+      background: #ffba08;
+    }
+
+    .apple-logo {
+      font-size: 21px;
+      color: #050505;
+    }
+
+    .signup-text {
+      margin-top: 33px;
+      color: #536078;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    .signup-text a {
+      color: var(--primary-blue);
+      font-weight: 500;
+    }
+
+    .signup-text a:hover {
+      text-decoration: underline;
+    }
+
+    .security-message {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+
+      color: #4c5e78;
+      font-size: 13px;
+    }
+
+    .security-message svg {
+      width: 23px;
+      height: 23px;
+      color: #155bc3;
+    }
+
+    /* =====================================================
+       RESPONSIVE
+    ===================================================== */
+
+    @media (max-width: 1350px) {
+      .hero-main {
+        padding-left: 48px;
+        padding-right: 48px;
+      }
+
+      .hero-content {
+        width: 57%;
+      }
+
+      .overview-card {
+        right: 28px;
+      }
+
+      .destination-card {
+        right: 48px;
+      }
+
+      .revenue-card {
+        right: 195px;
+      }
+
+      .login-card {
+        padding-left: 45px;
+        padding-right: 45px;
+      }
+    }
+
+    @media (max-width: 1150px) {
+      .page-wrapper {
+        grid-template-columns: 44% 56%;
+      }
+
+      .hero-content {
+        width: 82%;
+        margin-top: 58px;
+      }
+
+      .hero-content h1 {
+        font-size: 46px;
+      }
+
+      .metric-card,
+      .flight-path,
+      .plane-icon {
+        display: none;
+      }
+
+      .hero-footer {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .footer-feature {
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .page-wrapper {
+        display: block;
+      }
+
+      .hero-section {
+        min-height: auto;
+      }
+
+      .hero-main {
+        min-height: 360px;
+        padding: 34px 32px 45px;
+      }
+
+      .hero-content {
+        width: min(600px, 100%);
+        margin-top: 45px;
+      }
+
+      .hero-content h1 {
+        font-size: clamp(39px, 8vw, 58px);
+      }
+
+      .hero-subtitle {
+        margin-bottom: 0;
+      }
+
+      .feature-list,
+      .hero-footer {
+        display: none;
+      }
+
+      .login-section {
+        min-height: auto;
+        padding: 35px 22px 28px;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .hero-main {
+        min-height: 300px;
+        padding: 27px 22px 36px;
+      }
+
+      .product-name {
+        font-size: 15px;
+      }
+
+      .product-logo-icon {
+        width: 40px;
+        height: 40px;
+      }
+
+      .hero-content {
+        margin-top: 34px;
+      }
+
+      .hero-content h1 {
+        font-size: 38px;
+        letter-spacing: -1.7px;
+      }
+
+      .hero-subtitle {
+        font-size: 15px;
+      }
+
+      .login-section {
+        padding: 20px 12px 25px;
+        background: white;
+      }
+
+      .login-card {
+        padding: 35px 22px 30px;
+        border: 0;
+        box-shadow: none;
+      }
+
+      .tbo-logo {
+        margin-bottom: 36px;
+        font-size: 48px;
+      }
+
+      .login-heading {
+        margin-bottom: 32px;
+      }
+
+      .login-heading h2 {
+        font-size: 30px;
+      }
+
+      .login-heading p {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
+      .social-buttons {
+        grid-template-columns: 1fr;
+      }
+
+      .social-button {
+        justify-content: flex-start;
+        padding-left: 36%;
+      }
+
+      .signup-text {
+        line-height: 1.6;
+      }
+
+      .security-message {
+        padding: 0 15px;
+        text-align: center;
+        line-height: 1.5;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page-wrapper">
+
+    <!-- ===================================================
+         LEFT HERO SECTION
+    ==================================================== -->
+
+    <section class="hero-section">
+
+      <div class="hero-main">
+
+        <header class="product-name">
+          <div class="product-logo-icon">
+            <svg viewBox="0 0 32 32" fill="none">
+              <path
+                d="M6 24V17M12 24V11M18 24V14M24 24V7"
+                stroke="currentColor"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+
+              <path
+                d="M4 26H27"
+                stroke="currentColor"
+                stroke-width="2.4"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+
+          <span>Campaign Report Builder</span>
+        </header>
+
+        <div class="hero-content">
+          <h1>
+            Build Better<br />
+            Campaign Reports
+          </h1>
+
+          <p class="hero-subtitle">
+            Create beautiful, data-rich campaign reports with images,
+            numbers and actionable insights.
+          </p>
+
+          <div class="feature-list">
+
+            <article class="feature">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M4 20V13M9 20V8M14 20V11M19 20V4"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+
+                  <path
+                    d="M3 21H21"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+
+              <div>
+                <h3>Visualize Performance</h3>
+
+                <p>
+                  Interactive charts and KPIs that bring your data to life.
+                </p>
+              </div>
+            </article>
+
+            <article class="feature">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M7 3H15L20 8V21H7V3Z"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linejoin="round"
+                  />
+
+                  <path
+                    d="M15 3V8H20M10 13H17M10 17H15"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+
+              <div>
+                <h3>Share with Impact</h3>
+
+                <p>
+                  Export polished reports in seconds and impress stakeholders.
+                </p>
+              </div>
+            </article>
+
+            <article class="feature">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="8"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  />
+
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="4"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  />
+
+                  <path
+                    d="M12 12L19 5"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+
+              <div>
+                <h3>Smarter Decisions</h3>
+
+                <p>
+                  Turn insights into action and drive better campaign results.
+                </p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- Flight path -->
+
+        <svg
+          class="flight-path"
+          viewBox="0 0 320 340"
+          fill="none"
+        >
+          <path
+            d="M294 5C247 68 169 79 163 156C158 220 227 239 208 327"
+            stroke="rgba(255,255,255,.55)"
+            stroke-width="2"
+            stroke-dasharray="7 10"
+          />
+        </svg>
+
+        <svg
+          class="plane-icon"
+          viewBox="0 0 64 64"
+          fill="none"
+        >
+          <path
+            d="M56 9L38 28L22 23L17 28L31 35L20 46L11 44L7 48L18 55L25 58L29 54L27 45L38 34L45 48L50 43L45 27L60 13L56 9Z"
+            fill="currentColor"
+          />
+        </svg>
+
+        <!-- Campaign overview card -->
+
+        <article class="metric-card overview-card">
+          <span class="metric-title">Campaign Overview</span>
+
+          <span class="metric-label">Total Bookings</span>
+
+          <strong>24,540</strong>
+
+          <span class="growth">▲ 18.6%</span>
+
+          <small>vs last month</small>
+
+          <svg
+            class="line-chart"
+            viewBox="0 0 180 52"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M0 43C14 28 28 48 43 34C59 20 72 40 88 25C103 10 117 41 132 20C146 2 160 19 180 9"
+              fill="none"
+              stroke="#1466ef"
+              stroke-width="3"
+              stroke-linecap="round"
+            />
+
+            <path
+              d="M0 43C14 28 28 48 43 34C59 20 72 40 88 25C103 10 117 41 132 20C146 2 160 19 180 9V52H0Z"
+              fill="url(#chartGradient)"
+              opacity=".45"
+            />
+
+            <defs>
+              <linearGradient
+                id="chartGradient"
+                x1="0"
+                y1="0"
+                x2="0"
+                y2="1"
+              >
+                <stop stop-color="#4d95ff" />
+
+                <stop
+                  offset="1"
+                  stop-color="#dceaff"
+                />
+              </linearGradient>
+            </defs>
+          </svg>
+        </article>
+
+        <!-- Destination card -->
+
+        <article class="metric-card destination-card">
+          <span class="metric-title">Top Destinations</span>
+
+          <div class="destination-container">
+            <div class="donut-chart">
+              <span>38%</span>
+            </div>
+
+            <ul class="destination-list">
+              <li>
+                <span class="legend legend-1"></span>
+                Europe
+              </li>
+
+              <li>
+                <span class="legend legend-2"></span>
+                Asia
+              </li>
+
+              <li>
+                <span class="legend legend-3"></span>
+                Middle East
+              </li>
+
+              <li>
+                <span class="legend legend-4"></span>
+                Americas
+              </li>
+
+              <li>
+                <span class="legend legend-5"></span>
+                Others
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Revenue card -->
+
+        <article class="metric-card revenue-card">
+          <span class="metric-title">Revenue</span>
+
+          <div class="revenue-top">
+            <strong>$3.62M</strong>
+
+            <span class="growth">▲ 21.4%</span>
+          </div>
+
+          <small>vs last month</small>
+
+          <div class="mini-bars">
+            <span style="height: 24%"></span>
+            <span style="height: 42%"></span>
+            <span style="height: 32%"></span>
+            <span style="height: 53%"></span>
+            <span style="height: 31%"></span>
+            <span style="height: 49%"></span>
+            <span style="height: 38%"></span>
+            <span style="height: 62%"></span>
+            <span style="height: 47%"></span>
+            <span style="height: 58%"></span>
+            <span style="height: 81%"></span>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Bottom features -->
+
+      <footer class="hero-footer">
+
+        <article class="footer-feature">
+          <div class="footer-feature-icon">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M5 8V5H8M16 5H19V8M19 16V19H16M8 19H5V16"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linecap="round"
+              />
+
+              <circle
+                cx="9"
+                cy="10"
+                r="2"
+                stroke="currentColor"
+                stroke-width="1.5"
+              />
+
+              <circle
+                cx="15"
+                cy="14"
+                r="2"
+                stroke="currentColor"
+                stroke-width="1.5"
+              />
+
+              <path
+                d="M11 11L13 13"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+
+          <div>
+            <strong>Connect Data</strong>
+
+            <p>
+              Bring together all your campaign sources.
+            </p>
+          </div>
+        </article>
+
+        <article class="footer-feature">
+          <div class="footer-feature-icon">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M7 4H17L20 8V20H4V8L7 4Z"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linejoin="round"
+              />
+
+              <path
+                d="M9 8H15M8 13H16M8 17H13"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+
+          <div>
+            <strong>Build Reports</strong>
+
+            <p>
+              Drag, drop and customize with ease.
+            </p>
+          </div>
+        </article>
+
+        <article class="footer-feature">
+          <div class="footer-feature-icon">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M8 10L12 6L16 10M12 6V16"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+
+              <path
+                d="M5 13V20H19V13"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+
+          <div>
+            <strong>Export &amp; Share</strong>
+
+            <p>
+              Download, schedule or share instantly.
+            </p>
+          </div>
+        </article>
+
+      </footer>
+    </section>
+
+    <!-- ===================================================
+         RIGHT LOGIN SECTION
+    ==================================================== -->
+
+    <section class="login-section">
+
+      <div class="login-card">
+
+        <div class="tbo-logo">
+          <span class="tbo-blue">tbo</span>
+          <span class="tbo-orange">.com</span>
+
+          <small class="tbo-tagline">
+            TRAVEL SIMPLIFIED
+          </small>
+        </div>
+
+        <div class="login-heading">
+          <h2>Welcome Back</h2>
+
+          <p>
+            Login to your
+            <span>Campaign Report Builder</span>
+            account
+          </p>
+        </div>
+
+        <form id="loginForm" novalidate>
+
+          <!-- Email field -->
+
+          <div class="field-group">
+            <label for="email">
+              Email address
+            </label>
+
+            <div class="input-container">
+              <span class="input-icon">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <rect
+                    x="3"
+                    y="5"
+                    width="18"
+                    height="14"
+                    rx="2"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  />
+
+                  <path
+                    d="M4 7L12 13L20 7"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="Enter your email"
+                autocomplete="email"
+                required
+              />
+            </div>
+
+            <span
+              class="error-message"
+              id="emailError"
+            ></span>
+          </div>
+
+          <!-- Password field -->
+
+          <div class="field-group">
+            <label for="password">
+              Password
+            </label>
+
+            <div class="input-container">
+              <span class="input-icon">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <rect
+                    x="5"
+                    y="10"
+                    width="14"
+                    height="11"
+                    rx="2"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  />
+
+                  <path
+                    d="M8 10V7.5C8 5.57 9.57 4 11.5 4H12.5C14.43 4 16 5.57 16 7.5V10"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  />
+
+                  <circle
+                    cx="12"
+                    cy="15"
+                    r="1.2"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+
+              <input
+                id="password"
+                name="password"
+                type="password"
+                placeholder="Enter your password"
+                autocomplete="current-password"
+                minlength="6"
+                required
+              />
+
+              <button
+                type="button"
+                class="password-toggle"
+                id="passwordToggle"
+                aria-label="Show password"
+              >
+                <svg
+                  class="eye-open"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M2.5 12C4.7 7.8 8 5.7 12 5.7C16 5.7 19.3 7.8 21.5 12C19.3 16.2 16 18.3 12 18.3C8 18.3 4.7 16.2 2.5 12Z"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  />
+
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="2.7"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  />
+                </svg>
+
+                <svg
+                  class="eye-closed"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M3 3L21 21M10.6 5.9C11.05 5.77 11.52 5.7 12 5.7C16 5.7 19.3 7.8 21.5 12M6.2 7.1C4.73 8.2 3.5 9.83 2.5 12C4.7 16.2 8 18.3 12 18.3C13.08 18.3 14.1 18.15 15.02 17.84"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <span
+              class="error-message"
+              id="passwordError"
+            ></span>
+          </div>
+
+          <div class="form-options">
+            <label class="remember-option">
+              <input
+                type="checkbox"
+                id="rememberMe"
+              />
+
+              <span>Remember me</span>
+            </label>
+
+            <a href="#" id="forgotPassword">
+              Forgot password?
+            </a>
+          </div>
+
+          <button
+            type="submit"
+            class="login-button"
+            id="loginButton"
+          >
+            <span class="button-text">
+              Login
+            </span>
+
+            <span class="button-loader"></span>
+          </button>
+
+          <p
+            class="form-status"
+            id="formStatus"
+          ></p>
+
+          <div class="divider">
+            <span>or continue with</span>
+          </div>
+
+          <div class="social-buttons">
+
+            <button
+              type="button"
+              class="social-button"
+              data-provider="Google"
+            >
+              <span class="google-logo">G</span>
+
+              <span>Google</span>
+            </button>
+
+            <button
+              type="button"
+              class="social-button"
+              data-provider="Microsoft"
+            >
+              <span class="microsoft-logo">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+
+              <span>Microsoft</span>
+            </button>
+
+            <button
+              type="button"
+              class="social-button"
+              data-provider="Apple"
+            >
+              <span class="apple-logo">●</span>
+
+              <span>Apple</span>
+            </button>
+
+          </div>
+
+          <p class="signup-text">
+            New to Campaign Report Builder?
+
+            <a href="#">
+              Create an account
+            </a>
+          </p>
+
+        </form>
+      </div>
+
+      <div class="security-message">
+        <svg viewBox="0 0 24 24" fill="none">
+          <path
+            d="M12 3L19 6V11.3C19 16 16.1 19.1 12 21C7.9 19.1 5 16 5 11.3V6L12 3Z"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linejoin="round"
+          />
+
+          <path
+            d="M9 12L11 14L15.5 9.5"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+
+        <span>
+          Your data is secure with enterprise-grade encryption
+        </span>
+      </div>
+
+    </section>
+  </main>
+
+  <script>
+    const loginForm = document.getElementById("loginForm");
+    const emailInput = document.getElementById("email");
+    const passwordInput = document.getElementById("password");
+
+    const emailError = document.getElementById("emailError");
+    const passwordError = document.getElementById("passwordError");
+
+    const passwordToggle =
+      document.getElementById("passwordToggle");
+
+    const loginButton =
+      document.getElementById("loginButton");
+
+    const formStatus =
+      document.getElementById("formStatus");
+
+    const rememberMe =
+      document.getElementById("rememberMe");
+
+    const forgotPassword =
+      document.getElementById("forgotPassword");
+
+    /*
+      Load previously saved email address
+    */
+
+    const savedEmail =
+      localStorage.getItem("campaignBuilderEmail");
+
+    if (savedEmail) {
+      emailInput.value = savedEmail;
+      rememberMe.checked = true;
+    }
+
+    /*
+      Email validation
+    */
+
+    function isValidEmail(email) {
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    }
+
+    /*
+      Set or remove field error
+    */
+
+    function setError(input, errorElement, message) {
+      input.classList.toggle("invalid", Boolean(message));
+      input.setAttribute(
+        "aria-invalid",
+        Boolean(message).toString()
+      );
+
+      errorElement.textContent = message;
+    }
+
+    /*
+      Validate form
+    */
+
+    function validateForm() {
+      let valid = true;
+
+      const email = emailInput.value.trim();
+      const password = passwordInput.value;
+
+      if (!email) {
+        setError(
+          emailInput,
+          emailError,
+          "Please enter your email address."
+        );
+
+        valid = false;
+      } else if (!isValidEmail(email)) {
+        setError(
+          emailInput,
+          emailError,
+          "Please enter a valid email address."
+        );
+
+        valid = false;
+      } else {
+        setError(emailInput, emailError, "");
+      }
+
+      if (!password) {
+        setError(
+          passwordInput,
+          passwordError,
+          "Please enter your password."
+        );
+
+        valid = false;
+      } else if (password.length < 6) {
+        setError(
+          passwordInput,
+          passwordError,
+          "Password must contain at least 6 characters."
+        );
+
+        valid = false;
+      } else {
+        setError(passwordInput, passwordError, "");
+      }
+
+      return valid;
+    }
+
+    /*
+      Remove errors while typing
+    */
+
+    emailInput.addEventListener("input", function () {
+      if (emailError.textContent) {
+        validateForm();
+      }
+    });
+
+    passwordInput.addEventListener("input", function () {
+      if (passwordError.textContent) {
+        validateForm();
+      }
+    });
+
+    /*
+      Password visibility button
+    */
+
+    passwordToggle.addEventListener("click", function () {
+      const passwordVisible =
+        passwordInput.type === "text";
+
+      passwordInput.type =
+        passwordVisible ? "password" : "text";
+
+      passwordToggle.classList.toggle(
+        "visible",
+        !passwordVisible
+      );
+
+      passwordToggle.setAttribute(
+        "aria-label",
+        passwordVisible
+          ? "Show password"
+          : "Hide password"
+      );
+
+      passwordInput.focus();
+    });
+
+    /*
+      Login form submission
+    */
+
+    loginForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      formStatus.textContent = "";
+
+      if (!validateForm()) {
+        return;
+      }
+
+      if (rememberMe.checked) {
+        localStorage.setItem(
+          "campaignBuilderEmail",
+          emailInput.value.trim()
+        );
+      } else {
+        localStorage.removeItem(
+          "campaignBuilderEmail"
+        );
+      }
+
+      loginButton.disabled = true;
+      loginButton.classList.add("loading");
+
+      /*
+        DEMO LOGIN
+
+        Replace this setTimeout section with Firebase
+        Authentication or your backend API.
+      */
+
+      setTimeout(function () {
+        loginButton.disabled = false;
+        loginButton.classList.remove("loading");
+
+        formStatus.textContent =
+          "Login successful. Connect this form to your backend or Firebase.";
+
+        /*
+          Example redirect:
+
+          window.location.href = "dashboard.html";
+        */
+      }, 1000);
+    });
+
+    /*
+      Forgot password
+    */
+
+    forgotPassword.addEventListener(
+      "click",
+      function (event) {
+        event.preventDefault();
+
+        const email = emailInput.value.trim();
+
+        if (!email || !isValidEmail(email)) {
+          setError(
+            emailInput,
+            emailError,
+            "Enter your registered email address first."
+          );
+
+          emailInput.focus();
+          return;
+        }
+
+        formStatus.textContent =
+          "Password reset functionality can be connected using Firebase.";
+      }
+    );
+
+    /*
+      Social login buttons
+    */
+
+    document
+      .querySelectorAll(".social-button")
+      .forEach(function (button) {
+        button.addEventListener("click", function () {
+          const provider =
+            button.dataset.provider;
+
+          formStatus.textContent =
+            provider +
+            " login button is ready to connect.";
+        });
+      });
+  </script>
+</body>
+</html>
